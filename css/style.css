@@ -13,7 +13,7 @@ p {
     /*margin:0;*/
     font-size: 21px;
     line-height: 21px;
-    /*    font-family: "Roboto Condensed";*/
+/*        font-family: "Roboto Condensed";*/
     font-style: normal;
     font-weight: 400;
     color: #636363;
@@ -93,6 +93,42 @@ button {
     text-indent: -2.0079999995231628px;
     width: 255px;
 }
+/* Sticky Navigation */
+nav {   
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 400;
+}
+#sticky-Nav {
+/*    background-color: #333;*/
+    height: 80px;
+    width: 100%;
+    padding: 20px 0px 0 100px;
+}
+#sticky-Nav img {
+    display: block;
+    float: left;
+}
+#sticky-Nav ul {
+    display: block;
+    /*    float: left;*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#sticky-Nav li {
+    color: #fff;
+    display: inline-block;
+    /*        font-family: "proxima-nova",sans-serif;*/
+    font-size: 14px;
+    line-height: 16px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 32px 0 0 50px;
+    text-transform: uppercase;
+}
 /* Custom Panel Definition 
     Note All have same padding attributs 
 *************************************** */
@@ -108,41 +144,69 @@ button {
     background-size: cover;
     min-height: 150px;
     padding: 0;
-} 
-#divide-Three { 
+}
+#divide-Three {
     background: #233b52 url(../images/Graphite_divider.jpg) no-repeat center center scroll;
     background-size: cover;
     min-height: 150px;
     padding: 0;
-} 
-#Story {
-    background: #233b52 url(../images/Story_Area.jpg) no-repeat center center scroll;
+}
+
+#Story, #Leadership, #People, #Join-us {   
     background-size: cover;
-    min-height: 750px;
+    min-height: 1200px;
     padding: 0;
 }
-#Work {
-} 
+#Story {
+    background: #233b52 url(../images/Story_Area.jpg) no-repeat center center scroll;
+}
 
 #Leadership {
     background: #233b52 url(../images/Leadership.jpg) no-repeat center center scroll;
-    background-size: cover;
-    min-height: 750px;
-    padding: 0;
 }
 #People {
     background: #233b52 url(../images/People.jpg) no-repeat center center scroll;
-    background-size: cover;
-    min-height: 750px;
-    padding: 0;
 }
-#Join-Us {    
+#Join-Us {
     background: #233b52 url(../images/JoinUs.jpg) no-repeat center center scroll;
-    background-size: cover;
-    min-height: 750px;
-    padding: 0;
 }
 
+/* Case Studies */
+
+.Case-One,
+.Case-Two,
+.Case-Three,
+.Case-Four,
+.Case-Five,
+.Case-Six {
+    margin: 0;
+    min-height: 760px;
+    padding: 0;
+}
+.Case-One {
+    background: #233b52 url(../images/Case_1.jpg) no-repeat center center scroll;
+    background-size: cover;
+}
+.Case-Two {
+    background: #233b52 url(../images/Case_2.jpg) no-repeat center center scroll;
+    background-size: cover;
+}
+.Case-Three {
+    background: #233b52 url(../images/Case_3.jpg) no-repeat center center scroll;
+    background-size: cover;
+}
+.Case-Four {
+    background: #233b52 url(../images/Case_4.jpg) no-repeat center center scroll;
+    background-size: cover;
+}
+.Case-Five {
+    background: #233b52 url(../images/Case_5.jpg) no-repeat center center scroll;
+    background-size: cover;
+}
+.Case-Six {
+    background: #233b52 url(../images/Case_6.jpg) no-repeat center center scroll;
+    background-size: cover;
+}
 #Footer {
     background-color: #333;
     min-height: 150px;
