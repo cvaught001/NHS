@@ -13,7 +13,7 @@ p {
     /*margin:0;*/
     font-size: 21px;
     line-height: 21px;
-/*        font-family: "Roboto Condensed";*/
+    /*        font-family: "Roboto Condensed";*/
     font-style: normal;
     font-weight: 400;
     color: #636363;
@@ -94,7 +94,8 @@ button {
     width: 255px;
 }
 /* Sticky Navigation */
-nav {   
+
+nav {
     display: block;
     position: fixed;
     top: 0;
@@ -102,7 +103,7 @@ nav {
     z-index: 400;
 }
 #sticky-Nav {
-/*    background-color: #333;*/
+    /*    background-color: #333;*/
     height: 80px;
     width: 100%;
     padding: 20px 0px 0 100px;
@@ -151,8 +152,10 @@ nav {
     min-height: 150px;
     padding: 0;
 }
-
-#Story, #Leadership, #People, #Join-us {   
+#Story,
+#Leadership,
+#People,
+#Join-us {
     background-size: cover;
     min-height: 1200px;
     padding: 0;
@@ -160,7 +163,6 @@ nav {
 #Story {
     background: #233b52 url(../images/Story_Area.jpg) no-repeat center center scroll;
 }
-
 #Leadership {
     background: #233b52 url(../images/Leadership.jpg) no-repeat center center scroll;
 }
@@ -170,7 +172,6 @@ nav {
 #Join-Us {
     background: #233b52 url(../images/JoinUs.jpg) no-repeat center center scroll;
 }
-
 /* Case Studies */
 
 .Case-One,
@@ -207,8 +208,56 @@ nav {
     background: #233b52 url(../images/Case_6.jpg) no-repeat center center scroll;
     background-size: cover;
 }
+/* Foooter */
+
 #Footer {
     background-color: #333;
     min-height: 150px;
+    width: 100%;
+    position: relative;
+}
+#Footer ul {
+    display: block;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#Footer li {
+    color: #fff;
+    display: block;
+    /*        font-family: "proxima-nova",sans-serif;*/
+    font-size: 14px;
+    line-height: 16px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#Footer .left-foot {
+    left: 100px;
+    position: absolute;
+    top: 30%;
+}
+#Footer .left-foot img {
+    display: block;
+    padding: : 0 10px 0 20px;
+    float: left;
+}
+#Footer .right-foot {
+    right: 225px;
+    position: absolute;
+    top: 30%;
+}
+#Footer .right-foot ul {
+    float: left;
+    width: 200px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #fff;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: solid;
+    padding: 0 20px 0 20px;
 }
 /* Media Queries */
