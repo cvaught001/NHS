@@ -1,37 +1,34 @@
 /* 
     Element font styling 
 *************************************** */
+
 body {
     font-size: 13px;
-/*    font-family: "Roboto Condensed";*/
+    /*    font-family: "Roboto Condensed";*/
     font-style: normal;
     font-weight: 400;
 }
-
 p {
     padding: 0;
     /*margin:0;*/
     font-size: 21px;
     line-height: 21px;
-/*    font-family: "Roboto Condensed";*/
+    /*    font-family: "Roboto Condensed";*/
     font-style: normal;
     font-weight: 400;
     color: #636363;
 }
-
 h1 {
-/*    font-family: "din-condensed-web",sans-serif;*/
+    /*    font-family: "din-condensed-web",sans-serif;*/
     font-style: normal;
     font-weight: 400;
     font-size: 95px;
     line-height: 95px;
     text-transform: uppercase;
 }
-
-
 h2 {
     color: #134a7d;
-/*    font-family: "din-condensed-web",sans-serif;*/
+    /*    font-family: "din-condensed-web",sans-serif;*/
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
@@ -39,54 +36,51 @@ h2 {
     text-transform: uppercase;
     margin: 0 0 5px;
 }
-
 h2 {
     color: #134a7d;
-/*    font-family: "din-condensed-web",sans-serif;*/
+    /*    font-family: "din-condensed-web",sans-serif;*/
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
 }
-
 h3 {
     font-size: 20px;
-/*    font-family: "Roboto Condensed";*/
+    /*    font-family: "Roboto Condensed";*/
     font-style: normal;
     font-weight: 400;
     color: #636363;
 }
-
 h4 {
-/*    font-family: "din-condensed-web",sans-serif;*/
+    /*    font-family: "din-condensed-web",sans-serif;*/
     font-style: bold;
     font-weight: 400;
     font-size: 35px;
     line-height: 35px;
 }
-
-
 /*  Links
 *************************************** */
-li a, li a:active, li a:visited {
+
+li a,
+li a:active,
+li a:visited {
     color: #fff;
     text-decoration: none;
 }
-
-    li a:hover {
-        text-decoration: underline;
-    }
-
+li a:hover {
+    text-decoration: underline;
+}
 /* Interaction 
 *************************************** */
+
 button {
     color: #92278f;
     background-color: inherit;
     border-style: solid;
     border-color: #92278f #92278f;
     display: inline-block;
-    font-family: "proxima-nova",sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 800;
@@ -99,419 +93,58 @@ button {
     text-indent: -2.0079999995231628px;
     width: 255px;
 }
-
-
 /* Custom Panel Definition 
     Note All have same padding attributs 
 *************************************** */
 
-/*Panel Margins 
- Might want to Abstract as a subclass
-    -- Note add all panels here or make subclass
-******************* */
-.service-solutions-panel,
-.customer-experience,
-.meet-the-team,
-.company-partners,
-.company-locations,
-.webinar-features,
-.footer {
-    padding: 80px 0;
+#divide-One {
+    background: #233b52 url(../images/Red_Divider.jpg) no-repeat center center scroll;
+    background-size: cover;
+    min-height: 150px;
+    padding: 0;
 }
-
-.panel-center {
-        position: relative;
-        top: 250px;
-        }
-
-.panel-center h2 {  
-    font-family: "din-condensed-web",sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 95px;
-    line-height: 95px;
-    text-transform: uppercase;
-    text-align:center;
-    margin: 5px 0;
-}
-
-.panel-center h3 {  
-    font-family: "din-condensed-web",sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 32px;
-    text-transform: uppercase;
-    text-align:center;
-    margin: 5px 0;
-}
-/* Home Page Panels
-
-
-************************ */
-.home-page-header {
-    background: #233b52 url(../img/Header-Tahzoo-home.jpg) no-repeat center center scroll;
+#divide-Two {
+    background: #233b52 url(../images/Grey_Divide.jpg) no-repeat center center scroll;
+    background-size: cover;
+    min-height: 150px;
+    padding: 0;
+} 
+#divide-Three { 
+    background: #233b52 url(../images/Graphite_divider.jpg) no-repeat center center scroll;
+    background-size: cover;
+    min-height: 150px;
+    padding: 0;
+} 
+#Story {
+    background: #233b52 url(../images/Story_Area.jpg) no-repeat center center scroll;
     background-size: cover;
     min-height: 750px;
-    /*max-height: 950px;*/
-    padding: 20px 0 0;
-}
-
-.home-page-header .panel-center {
-        position: relative;
-        display: block;
-        top: 150px;
-    }
-    
-.home-page-header h1 {
-        color: #ffde66;
-        text-align: center;
-        margin-bottom: 0;
-    }
-    
-.home-page-header button {
-        color: #fff; 
-        background-color: rgba(255,255,255, 0.2);
-        border-style: solid;
-        border-color: #fff #fff;
-    }  
-.home-page-header .logo {
-    height: auto;
-    width: inherit;
-    margin:0;
     padding: 0;
-    }
-/* Home Page Carousel Controls */
-#arrows {
-    position:relative;
 }
-.home-page-nav-arrow-left {
-    position: absolute;
-    left: 10px;
-   top: 220px;
-    z-index: 4;
-}
-  
- .home-page-nav-arrow-right {
-    position: absolute;
-    right: 10px;
-   top: 220px;
-    z-index: 4;
-}
-.service-solutions-panel  {
-     /*min-height: 300px;*/
-}
-.service-solutions-panel .panel-center {
-    top: 0px;
-}
-.service-solutions-panel .panel-center h2{
-     color: #636363;
-}
-    
-.service-solutions-panel .panel-center h3 {
-    margin: 0 0 40px;
-        color: #636363;
-}
+#Work {
+} 
 
-.pioneering-authentic-panel {
-    background: #233b52 url(../img/panel_pioneering_plus_authentic.png) no-repeat center center scroll;
+#Leadership {
+    background: #233b52 url(../images/Leadership.jpg) no-repeat center center scroll;
     background-size: cover;
-    min-height: 700px;
+    min-height: 750px;
+    padding: 0;
 }
- .pioneering-authentic-panel h2, .pioneering-authentic-panel h3 {
-        color: #134a7d;
-        }
-
-.engage-transform-panel {
-    background: #233b52 url(../img/panel_engage_plus_transform.jpg) no-repeat center center scroll;
+#People {
+    background: #233b52 url(../images/People.jpg) no-repeat center center scroll;
     background-size: cover;
-    min-height: 700px;
+    min-height: 750px;
+    padding: 0;
 }
-.engage-transform-panel h2{
-    color: #ffde66;
-}
-
-.engage-transform-panel button {
-     color: #fff;
-        background-color: rgba(255,255,255, 0.3);
-        border-style: solid;
-        border-color: #fff #fff;
-    }
-
-/* Who We are
-************************ */
-.who-we-are-header {
-    background: #233b52 url(../img/Header-Tahzoo-fish.jpg) no-repeat center center scroll;
+#Join-Us {    
+    background: #233b52 url(../images/JoinUs.jpg) no-repeat center center scroll;
     background-size: cover;
-    min-height: 600px;
-    padding: 20px 0 0;
+    min-height: 750px;
+    padding: 0;
 }
 
-    .who-we-are-header h1 {
-        position: relative;
-        color: #ffde66;
-        text-align: center;
-        top: 150px;
-    }
-
-/*.feature-area {
-}*/
-.sub-nav {
-    background-color: #134a7d;
+#Footer {
+    background-color: #333;
+    min-height: 150px;
 }
-
-.customer-experience {
-    background-color: #ebebeb;
-}
-
-.meet-the-team {
-    background-color: #fff;
-}
-
-    .meet-the-team img {
-        padding: 0;
-        margin: 0;
-        /*width: auto;
-    height: auto;*/
-    }
-
-    .meet-the-team .member-Header {
-        color: #92278f;
-        font-family: "din-condensed-web",sans-serif;
-        font-style: bold;
-        font-weight: 400;
-        text-align: center;
-    }
-
-    .meet-the-team hr {
-        color: #636363;
-    }
-
-    .meet-the-team .member-role {
-        font-size: 20px;
-        font-family: "Roboto Condensed";
-        font-style: normal;
-        font-weight: 400;
-        color: #636363;
-        text-align: center;
-        padding: 0;
-        margin: 0;
-    }
-
-.company-partners {
-    background-color: #ebebeb;
-}
-
-    .company-partners img {
-        height: auto;
-        width: auto;
-    }
-
-.company-locations {
-    background-color: #313e50;
-    color: #fff;
-}
-
-    .company-locations h2 {
-        color: #ffde66;
-    }
-
-    .company-locations p {
-        color: #fff;
-    }
-
-.webinar-features {
-    background-color: #0579a8;
-}
-
-    .webinar-features h2 {
-        color: #fff;
-        text-align: center;
-    }
-
-    .webinar-features h3 {
-        color: #4099bc;
-        text-align: center;
-        font-size: 24px;
-    }
-
-    .webinar-features button {
-        color: #fff;
-        background-color: #1e87b1;
-        border-style: solid;
-        border-color: #fff #fff;
-    }
-
-.footer {
-    background-color: #134a7d;
-}
-
-    .footer h2 {
-        font-size: 25px;
-        color: #fff;
-    }
-
-    .footer h3 {
-        color: #89a5be;
-    }
-
-    .footer p {
-        color: #89a5be;
-        display: block;
-        font-family: "proxima-nova",sans-serif;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 700;
-        margin: 0 0 10px;
-        padding: 0;
-        text-transform: uppercase;
-    }
-
-
-/* Navigation
-********************************* */
-#main-navigation {
-    display: block;
-    position: relative;
-    float: right;
-}
-
-    #main-navigation ul {
-        display: block;
-        float: left;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    #main-navigation li {
-        color: #fff;
-        display: inline-block;
-        font-family: "proxima-nova",sans-serif;
-        font-size: 14px;
-        line-height: 16px;
-        font-style: normal;
-        font-weight: 700;
-        margin: 32px 0 0 50px;
-        text-transform: uppercase;
-    }
-
-#contact-navigation {
-    color: #ebebeb;
-    display: block;
-    position: absolute;
-    bottom: 20px;
-    right: 0;
-}
-
-    #contact-navigation ul {
-        display: block;
-        float: left;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    #contact-navigation li {
-        color: #ebebeb;
-        display: inline-block;
-        font-family: "proxima-nova",sans-serif;
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 700;
-        text-transform: uppercase;
-        margin: 40px 0 0;
-    }
-
-    #contact-navigation .separ::after {
-        content: "|";
-        margin: 0 10px;
-    }
-
-    #contact-navigation li:last-child {
-        margin: 40px 14px 0 0;
-    }
-
-    #contact-navigation .yellow, #contact-navigation .yellow a, #contact-navigation .yellow a:active, #contact-navigation .yellow a:visited {
-        color: #ffde66;
-    }
-
-#sub-navigation {
-    display: block;
-    position: relative;
-}
-
-    #sub-navigation ul {
-        display: block;
-        float: left;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    #sub-navigation li {
-        color: #fff;
-        display: inline-block;
-        font-family: "proxima-nova",sans-serif;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 400;
-        margin: 20px 40px 20px 0;
-        text-transform: uppercase;
-    }
-
-#footer-navigation {
-    color: #89a5be;
-    margin: 0;
-}
-
-    #footer-navigation ul {
-        display: block;
-        list-style: none;
-        margin: 5px 0;
-        padding: 0;
-        float: left;
-        text-transform: uppercase;
-    }
-
-    #footer-navigation .first {
-        display: block;
-        font-family: "proxima-nova",sans-serif;
-        font-style: normal;
-        font-size: 15px;
-        font-weight: 700;
-        color: #89a5be;
-        margin: 0 0 5px 0;
-    }
-
-    #footer-navigation li .first {
-        display: block;
-        font-family: "proxima-nova",sans-serif;
-        font-style: normal;
-        font-size: 15px;
-        font-weight: 700;
-        color: #89a5be;
-        margin: 0 0 5px 0;
-    }
-
-    #footer-navigation li a {
-        display: block;
-        font-family: "proxima-nova",sans-serif;
-        font-style: normal;
-        font-size: 13px;
-        font-weight: 400;
-        color: #89a5be;
-    }
-/*#footer-navigation li, #footer-navigation li a:link, #footer-navigation li a:visited, #footer-navigation li a:active {
-        color: #89a5be;
-        font-family: "proxima-nova",sans-serif;
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 400;
-        margin: 0;
-    }*/
-
-/* 
-   Media Queries Here
-   
- *************************************** */
+/* Media Queries */
