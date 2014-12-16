@@ -9,7 +9,8 @@
     <meta keywords="New Honor Society<">
     <meta content="width=device-width" name="viewport">
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>           
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+    <script src="/js/jquery.mousewheel.min.js" type="text/javascript "></script>
     <!--Webfonts-->
     <!-- Stylesheets-->
     <link href="/css/normalize.css" rel="stylesheet" />
@@ -19,30 +20,50 @@
 
 <body>
     <!-- Site -->
-    <nav id="sticky-Nav">
+    <nav id="sticky-Nav" class="no-mobile">
         <img src="/images/bird-Placeholder.png">
         <ul>
-            <li><a href="#">Leadership</a></li>
-            <li><a href="#">People</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Join Us</a></li>
+            <li><a href="#">Leadership</a>
+            </li>
+            <li><a href="#">People</a>
+            </li>
+            <li><a href="#">Work</a>
+            </li>
+            <li><a href="#">Join Us</a>
+            </li>
         </ul>
     </nav>
 
     <section id="Story">
         <!-- Navigation -->
     </section>
-
     <div id="divide-One"></div>
-
     <!-- Case Studies -->
     <section id="Work">
-            <div class="column six Case-One"></div>
-            <div class="column six Case-Two"></div>
-            <div class="column six Case-Three"></div>
-            <div class="column six Case-Four"></div>
-            <div class="column six Case-Five"></div>
-            <div class="column six Case-Six"></div>
+        <div class="column six Case-One">
+            <img src="images/Case_1.jpg" class="hoverState">
+            <div class="overlayEffect"></div>
+        </div>
+        <div class="column six Case-Two">
+            <img src="images/Case_2.jpg">
+            <div class="overlayEffect"></div>
+        </div>
+        <div class="column six Case-Three">
+            <img src="images/Case_3.jpg">
+            <div class="overlayEffect"></div>
+        </div>
+        <div class="column six Case-Four">
+            <img src="images/Case_4.jpg">
+            <div class="overlayEffect"></div>
+        </div>
+        <div class="column six Case-Five">
+            <img src="images/Case_5.jpg">
+            <div class="overlayEffect"></div>
+        </div>
+        <div class="column six Case-Six">
+            <img src="images/Case_6.jpg">
+            <div class="overlayEffect"></div>
+        </div>
     </section>
     <div style="clear:both"></div>
     <section id="Leadership"></section>
@@ -56,21 +77,27 @@
     <!-- Foooter -->
     <footer id="Footer">
         <div class="left-foot">
-        <img src="/images/Sword_and_Map.png" class="footer-img">
-        <ul>
-            <li><a href="#">St. Louis</a></li>
-            <li><a href="#">Chicago</a></li>
-            <li><a href="#">San Fransisco</a></li>
-        </ul>    
-     </div>
+            <img src="/images/Sword_and_Map.png" class="footer-img">
+            <ul>
+                <li><a href="#">St. Louis</a>
+                </li>
+                <li><a href="#">Chicago</a>
+                </li>
+                <li><a href="#">San Fransisco</a>
+                </li>
+            </ul>
+        </div>
         <div class="right-foot">
-        <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
-        </ul>
-          <img src="/images/back_to_top.png" height="50px" class="backToTop">
-            </div>
+            <ul>
+                <li><a href="#">Instagram</a>
+                </li>
+                <li><a href="#">Twitter</a>
+                </li>
+            </ul>
+            <img src="/images/back_to_top.png" height="50px" class="backToTop">
+        </div>
     </footer>
-     <script src="/js/app.js" type="text/javascript "></script>
+    <script src="/js/app.js" type="text/javascript "></script>
 </body>
+
 </html>

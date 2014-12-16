@@ -156,11 +156,11 @@ nav {
 #Leadership,
 #People,
 #Join-us {
-/*    background-size: cover;*/
-        background-size: 100% 100%;
+    /*    background-size: cover;*/
+    background-size: contain;
     background-repeat: no-repeat;
     /*Set height to height of viewport*/
-     height:100vh;
+    height: 100vh;
     padding: 0;
 }
 #Story {
@@ -183,29 +183,24 @@ nav {
 .Case-Four,
 .Case-Five,
 .Case-Six {
+    position: relative;
+    height: auto;
     margin: 0;
-    height:80vh;
-/*      background-size: 100% 100%;*/
     padding: 0;
-    background-size: cover;
+    cursor: pointer;
 }
-.Case-One {
-    background: #233b52 url(../images/Case_1.jpg) no-repeat center center scroll;
-}
-.Case-Two {
-    background: #233b52 url(../images/Case_2.jpg) no-repeat center center scroll;
-}
-.Case-Three {
-    background: #233b52 url(../images/Case_3.jpg) no-repeat center center scroll;
-}
-.Case-Four {
-    background: #233b52 url(../images/Case_4.jpg) no-repeat center center scroll;
-}
-.Case-Five {
-    background: #233b52 url(../images/Case_5.jpg) no-repeat center center scroll;
-}
-.Case-Six {
-    background: #233b52 url(../images/Case_6.jpg) no-repeat center center scroll;
+/* Overlay */
+
+.overlayEffect {
+    background-color: #a9d1d9;
+    display: none;
+    left: 0;
+    opacity: .7;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 200;
 }
 /* Foooter */
 
@@ -259,33 +254,20 @@ nav {
     border-left-style: solid;
     padding: 0 20px 0 20px;
 }
-
-/* Need  Media Queries for 800 and */
-
-/* This should Handle a Majority of Handheld Devices */
+.mobile-content {
+    display: none;
+}
+.no-mobile {
+    display: block;
+}
 @media only screen and (max-width: 40em) {
-    /* Increase Span to full area */
-    .six,
-    .row .six {
-        width: 100%;
+    /* Display Mobile vs Non Mobile Elements */
+    .no-mobile {
+        display: none;
     }
-    #Story,
-    #Leadership,
-    #People,
-    #Join-us {
-        background-size: cover;
-        min-height: 400px;
-        padding: 0;
+    .mobile-content {
+        display: block;
     }
-    .Case-One,
-    .Case-Two,
-    .Case-Three,
-    .Case-Four,
-    .Case-Five,
-    .Case-Six {
-        margin: 0;
-        min-height: 350px;
-        padding: 0;
-        background-size: cover;
-    }
+    
+    .six, .row .six { width: 100%; padding: 0; margin: 0  }
 }
