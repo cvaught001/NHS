@@ -31,7 +31,7 @@ h2 {
     /*    font-family: "din-condensed-web",sans-serif;*/
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 30px;
     text-transform: uppercase;
     margin: 0 0 5px;
@@ -74,6 +74,7 @@ li a:hover {
 /* Interaction 
 *************************************** */
 
+/*
 button {
     color: #92278f;
     background-color: inherit;
@@ -93,6 +94,7 @@ button {
     text-indent: -2.0079999995231628px;
     width: 255px;
 }
+*/
 /* Sticky Navigation */
 
 nav {
@@ -192,15 +194,37 @@ nav {
 /* Overlay */
 
 .overlayEffect {
-    background-color: #a9d1d9;
+     background:rgba(112,81,246,0.6);
     display: none;
     left: 0;
-    opacity: .7;
     position: absolute;
     top: 0;
     height: 100%;
     width: 100%;
     z-index: 200;
+}
+
+.details{
+    display: table-cell;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+.details h2{ 
+    color:rgba(255,255,255, 1);
+    display: table-cell;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgba(255,255,255, 1);
+    text-align: center;
+    padding: 20px 80px;
+}
+.details p{
+    color:rgba(255,255,255, 1);
+}
+.details button{
+ color:rgba(0,0,0, 1);
+/*    border-color: rgba(255,255,255, 1);*/
 }
 /* Foooter */
 
