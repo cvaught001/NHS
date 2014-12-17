@@ -7,6 +7,7 @@
  * 
  * Copyright 2013, Codrops
  * http://www.codrops.com
+ Note added Prevent Default on Click
  */
 var ModalEffects = (function() {
 
@@ -44,7 +45,8 @@ var ModalEffects = (function() {
 			});
 
 			close.addEventListener( 'click', function( ev ) {
-				ev.stopPropagation();
+				ev.preventDefault();
+                ev.stopPropagation();
 				removeModalHandler();
 			});
 
