@@ -1,79 +1,152 @@
-/* 
-    Element font styling 
-*************************************** */
+.video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
 
-body {
-    font-size: 13px;
-    /*    font-family: "Roboto Condensed";*/
+.video iframe {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+   
+div.bing-map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+body, ul, li {
+    font-size: 13px;   
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
 }
-p {
-    padding: 0;
-    /*margin:0;*/
-    font-size: 21px;
-    line-height: 21px;
-    /*        font-family: "Roboto Condensed";*/
+
+.blur{
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+/* Typography */
+column, p {
+    color: #636363;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 32px;
     font-style: normal;
     font-weight: 400;
-    color: #636363;
+    padding: 0;
 }
 
 .md-modal p {
-    padding: 0;
-    /*margin:0;*/
-    font-size: 21px;
-    line-height: 21px;
-    /* font-family: "Roboto Condensed";*/
-    font-style: normal;
-    font-weight: 400;
     color:rgba(102,102,102, 1);
     font-style: italic;
 }
-.md-modal p  strong{
+.md-modal strong{
     padding: 0;
-    /*margin:0;*/
-    font-size: 21px;
-    line-height: 21px;
-    /* font-family: "Roboto Condensed";*/
-    font-style: normal;
-    font-weight: 400;
+    padding: 0;
+    font-weight: 500;
+    font-weight: 500;
     color:rgba(102,102,102, 1);
     font-style: normal;
 }
+
+.md-modal .six{
+padding: 0 10px;
+}
+
+
 .details p{
+    margin: 0;
+    padding: 10px 0;
     color:rgba(255,255,255, 1);
 }
 
+.our-story p{
+    margin: -35px 0 35px 0;
+    padding: 0;
+    color:rgba(255,255,255, 1);
+    width: 60%;
+}
+
 h1 {
-    /*    font-family: "din-condensed-web",sans-serif;*/
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 95px;
-    line-height: 95px;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 8px;
     text-transform: uppercase;
+    margin: 0.67em 0;
 }
 h2 {
     color: #134a7d;
-    /*    font-family: "din-condensed-web",sans-serif;*/
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 700;  
+    font-size: 33px;    
+    letter-spacing: 4px;
     line-height: 30px;
     text-transform: uppercase;
-    margin: 0 0 5px;
+    margin: 0;
+    padding: 0;
 }
 
-.details h2{ 
+#Leadership h2 {
+    border-style: solid;
+    border-width: 5px;
+    background-color: rgba(55,55,55, .4);
+    border-color: rgba(255,255,255, 1);
+    color:rgba(255,255,255, 1);
+    display: block;
+    padding: 20px 80px;
+    position: absolute;
+    top: 20px; 
+    text-align: center;
+}
+
+#Join-Us h2{  
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgba(255,255,255, 1);
+    color:rgba(255,255,255, 1);
+    display: block;
+    padding: 20px 80px;
+    position: absolute;
+    top: 20px; 
+    text-align: center;
+}
+
+.details h2{
     color:rgba(255,255,255, 1);
     display: table-cell;
     border-style: solid;
     border-width: 5px;
     border-color: rgba(255,255,255, 1);
     text-align: center;
-    padding: 20px 80px;
+    padding: 20px 50px;
 }
 
+<<<<<<< HEAD
+
+.Case-Six-BK .details h2{
+    color:rgba(102,102,102, 1);
+    border-color: rgba(102,102,102, 1);
+}
+.Case-Six-BK .details P{
+    color:rgba(102,102,102, 1);
+    border-color: rgba(102,102,102, 1);
+}
+
+=======
+>>>>>>> parent of ec78dcd... Updates
 .md-modal h3{ 
     color:rgba(102,102,102, 1);
     display: table-cell;
@@ -83,24 +156,19 @@ h2 {
     text-align: center;
     padding: 20px 80px;
 }
-h2 {
-    color: #134a7d;
-    /*    font-family: "din-condensed-web",sans-serif;*/
+
+
+h3 {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 30px;
+    font-weight: 800;
+    color: #636363;
+    letter-spacing: 4px;
     text-transform: uppercase;
 }
-h3 {
-    font-size: 20px;
-    /*    font-family: "Roboto Condensed";*/
-    font-style: normal;
-    font-weight: 400;
-    color: #636363;
-}
 h4 {
-    /*    font-family: "din-condensed-web",sans-serif;*/
+   font-family: 'Roboto', sans-serif;
     font-style: bold;
     font-weight: 400;
     font-size: 35px;
@@ -112,7 +180,7 @@ h4 {
 li a,
 li a:active,
 li a:visited {
-    color: #fff;
+    color:  rgba(255,255,255, 1);
     text-decoration: none;
 }
 li a:hover {
@@ -123,23 +191,30 @@ li a:hover {
 
 
 button {
-    color: rgba(235,235,235, 1);
+    color: rgba(255,255,255, 1);
     background-color: rgba(235,235,235, 1);
     display: table-cell;
-    font-size: 15px;
+    font-size: 10px;
     font-style: normal;
-    font-weight: 100;
-    padding: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 10px 31px;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
     border: none;
 }
+
 button:hover{
     color: rgba(255,255,255, 1);
     background-color: rgba(135,135,135, 1);
 }
+button:visited{
+    color: rgba(102,102,102, 1);
+    background-color: rgba(135,135,135, 1);
+}
 
+/* Close Button */
 .md-content .button {
 	display: block;
     position: absolute;
@@ -148,7 +223,20 @@ button:hover{
     text-decoration: none;
     text-transform: uppercase;
 }
-
+.our-story button{
+    color:rgba(255,255,255, 1);
+    background-color: rgba(226,64,99, 1);
+}
+.our-story button:hover{
+    color: rgba(255,255,255, 1);
+    background-color: rgba(135,135,135, 1);
+}
+.details button{
+ color:rgba(102,102,102, 1);
+}
+.details button:hover{
+ color: rgba(255,255,255, 1);
+}
 
 /* Sticky Navigation */
 
@@ -173,7 +261,7 @@ nav {
     display: block;
     /*    float: left;*/
     list-style: none;
-    margin: 0;
+    margin: -20px 0 0;
     padding: 0;
 }
 #sticky-Nav li {
@@ -210,9 +298,7 @@ nav {
     padding: 0;
 }
 #Story,
-#Leadership,
-#People,
-#Join-us {
+#People {
     /*    background-size: cover;*/
     background-size: contain;
     background-repeat: no-repeat;
@@ -220,18 +306,59 @@ nav {
     height: 100vh;
     padding: 0;
 }
-#Story {
-    background: #233b52 url(../images/Story_Area.jpg) no-repeat center center scroll;
+
+#Leadership, #Join-Us {
+    position: relative;
 }
-#Leadership {
-    background: #233b52 url(../images/Leadership.jpg) no-repeat center center scroll;
+
+#Join-Us  a{  
+color: rgba(255,255,255,1);
 }
+
+#Join-Us .v-align {
+	width: 18%;
+	position: absolute;
+	top:5%;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+/*
+
+ .new-business {
+    position: relative;
+     top: 80px;
+    left: 900px;
+    width: 200px;
+    z-index: 205;
+}
+ .job-opportunities {
+
+    position: relative;
+    top: 80px;
+    left: 900px;
+    width: 200px;
+        z-index: 205;
+}
+*/
+
+#Leadership .v-align {
+	width: 28%;
+	height: 25%;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+ 
 #People {
     background: #233b52 url(../images/People.jpg) no-repeat center center scroll;
 }
-#Join-Us {
-    background: #233b52 url(../images/JoinUs.jpg) no-repeat center center scroll;
-}
+
 /* Case Studies */
 
 .Case-One,
@@ -239,7 +366,8 @@ nav {
 .Case-Three,
 .Case-Four,
 .Case-Five,
-.Case-Six {
+.Case-Six ,
+.Join-Us-Case{
     position: relative;
     height: auto;
     margin: 0;
@@ -259,16 +387,42 @@ nav {
     z-index: 200;
 }
 
+<<<<<<< HEAD
+.Join-Us-Bk{
+    background:rgba(144,124,55,0.4);
+}
+
+.Case-Two-BK {
+    background:rgba(55,132,151,0.9);
+}
+.Case-Three-BK {
+    background:rgba(179,110,131,0.9);
+}
+.Case-Four-BK {
+    background:rgba(203,141,49,0.9);
+}
+.Case-Five-BK {
+    background:rgba(66,66,66,0.9);
+}
+.Case-Six-BK {
+    background:rgba(252,244,27,0.9);
+}
+ .our-story{
+=======
 .details{
+>>>>>>> parent of ec78dcd... Updates
     display: table-cell;
     position: absolute;
     top: 20%;
     left: 20%;
 }
 
-.details button{
- color:rgba(0,0,0, 1);
-/*    border-color: rgba(255,255,255, 1);*/
+/* Reposition on Media Query */
+.details {
+    display: table-cell;
+    position: absolute;
+    top: 40%;
+    left: 20%;
 }
 /* Foooter */
 
@@ -322,29 +476,203 @@ nav {
     border-left-style: solid;
     padding: 0 20px 0 20px;
 }
-.mobile-content {
-    display: none;
+
+
+/* General styles for the modal */
+.md-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	max-width: 70%;
+	min-width: 50%;
+	height: auto;
+	z-index: 2000;
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
 }
-.no-mobile {
-    display: block;
+
+.md-modal .header{
+    display: table;
+    margin: 30px auto;
 }
+
+.md-show {
+	visibility: visible;
+}
+
+/* Need Mobile Styles */
+.md-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	opacity: 0;
+	background: rgba(255,255,255,0.8);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.md-show ~ .md-overlay {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* Content styles */
+.md-content {
+	color: #fff;
+	background: rgba(255,255,255,.8);
+	position: relative;
+	border-radius: 3px;
+	margin: 0 auto;
+/*    padding: 40px 100px;*/
+    padding: 100px;
+}
+
+
+/* Effect 16:  Blur */
+.md-show.md-effect-16 ~ .md-overlay {
+    background: rgba(155,155,155,0.5);
+}
+
+.md-show.md-effect-16  ~ .container {
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	filter: blur(3px);
+}
+
+.md-effect-16 .md-content {
+	-webkit-transform: translateY(-5%);
+	-moz-transform: translateY(-5%);
+	-ms-transform: translateY(-5%);
+	transform: translateY(-5%);
+	opacity: 0;
+}
+
+.md-show.md-effect-16 ~ .container,
+.md-effect-16 .md-content {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.md-show.md-effect-16 .md-content {
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+	opacity: 1;
+}
+
+
+/* **********************
+     Media Queries 
+**************************
+*/
+
+
+/* Large Screens */
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { 
+  .md-modal { max-width: 80%;min-width: 80%; }
+.details {display: table-cell; position: absolute;top: 30%; left: 20%;}    
+} 
+
+/* Small Screens 1300 Portrait */
+@media only screen and (max-width: 84em) {
+      /* Display Mobile vs Non Mobile Elements */
+ /* Modal Window Size */
+    .md-modal {  max-width: 80%; min-width: 80%;   
+    }
+     /* Our Story Resize */
+    .our-story p {font-size: 18px;line-height: 24px; margin: -35px 0 35px 0; width: 80%;}
+    h1 {font-size: 60px; line-height: 60px;letter-spacing: 8px; margin: .67em 0; } 
+}
+
+/* Small Screens 1050 Portrait */
+@media only screen and (max-width: 74em) {
+    /* Display Mobile vs Non Mobile Elements */
+    /* Our Story Resize */
+    .our-story { left: 10%; top: 10%; }
+    .our-story p {font-size: 18px;line-height: 24px;margin: -35px 0 35px 0; width: 80%;}
+    h1 { font-size: 50px;line-height: 50px;letter-spacing: 8px; margin: .67em 0; } 
+}
+
+/* Small Screens 1050 Portrait */
+@media only screen and (max-width: 64em) {
+     /* Display Mobile vs Non Mobile Elements */
+     /* Our Story Resize */
+    .our-story { left: 5%;top: 0%;}
+    .our-story p {font-size: 16px;line-height: 22px; margin: -25px 0 35px 0;  width: 80%;}
+    h1 { font-size: 40px; line-height: 40px; letter-spacing: 8px; margin: .67em 0;} 
+}
+/* Small Screens 900 Portrait */
+@media only screen and (max-width: 54em) {
+    /* Display Mobile vs Non Mobile Elements */
+    /* Our Story Resize */
+    .our-story { left: 5%; top: 0%;}
+    .our-story p { font-size: 18px; line-height: 22px;margin: -15px 0 10px 0;  width: 80%;}
+    h1 { font-size: 30px;line-height: 30px;letter-spacing: 8px; margin: .67em 0;}
+} 
+
+
+/* min-width 800px, large screens */ 
+@media only screen and (min-width: 40.063em) and (max-width: 90em) { 
+    /* Modal Window Size */
+    .md-modal {  max-width: 80%; min-width: 80%; }
+    .details { display: table-cell; position: absolute; top: 20%;left: 5%; }  
+   
+    /* Leadership Mobile  & Modal Windows*/
+    .md-content { padding: 20px }
+    h3{ font-size: 22px; line-height: 22px; }
+    #leadership-content p{ font-size: 14px; line-height: 16px; }
+    #leadership-content .six, .row .six { width: 100%; padding: 0; margin: 10px 0;  }
+}
+    
+/* Small Screens 600x800 Portrait */
 @media only screen and (max-width: 40em) {
     /* Display Mobile vs Non Mobile Elements */
-    .no-mobile {
-        display: none;
-    }
-    .mobile-content {
-        display: block;
-    }
-/* Modal Windows on iPhone */    
-    .md-modal { 
-        max-width: 100%;
-        min-width: 100%;
-        
-    }
+     .mobile-content { display: none;}
+    .no-mobile { display: block; }
+    /* Close Button */
+    .md-content .button {	display: none;}
+    /* Our Story Resize */   
+    .our-story {left: 5%;top: 0%;}
+    .our-story p{font-size: 20px;line-height: 24px;margin: -35px 0 35px 0; width: 100%;}
+    h1 { font-size: 70px; line-height: 70px; letter-spacing: 8px; margin: .67em 0;}
     
-    .md-content {
-         padding: 20px 20px;
-    }
+    .md-modal { max-width: 90%; min-width: 90%; }
+    .details { display: table-cell;position: absolute;top: 10%; left: 2%; }
+    .md-content { padding: 20px 20px; }
     .six, .row .six { width: 100%; padding: 0; margin: 0  }
+    
+     /* Leadership Mobile  & Modal Windows*/
+    .md-content { padding: 20px }
+    h3{ font-size: 22px; line-height: 22px; }
+    #leadership-content p{ font-size: 14px; line-height: 16px; }
+    #leadership-content .six, .row .six { width: 100%; padding: 0; margin: 5px 0;  }
+}
+
+
+@media screen and (max-width: 32em) {
+    body { font-size: 75%;}
+    .mobile-content { display: none;}
+    .no-mobile { display: block; }
+    /* Our Story Resize */
+    .our-story p {  font-size: 10px; line-height: 14px; margin: -35px 0 35px 0;width: 100%; }
+    h1 {font-size: 30px;line-height: 30px; letter-spacing: 8px; margin: 1.67em 0;}
+     /* Leadership Mobile  & Modal Windows*/
+    .md-content { padding: 10px }
+    h3{ font-size: 12px; line-height: 12px; }
+    #leadership-content p{ font-size: 9px; line-height: 10px; }
+    #leadership-content .six, .row .six { width: 100%; padding: 0; margin: 10px 0;  }
 }

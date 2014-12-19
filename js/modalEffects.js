@@ -7,7 +7,8 @@
  * 
  * Copyright 2013, Codrops
  * http://www.codrops.com
- Note added Prevent Default on Click
+  CV Note added Prevent Default on Click
+   Added Blur 
  */
 var ModalEffects = (function() {
 
@@ -22,7 +23,6 @@ var ModalEffects = (function() {
 
 			function removeModal( hasPerspective ) {
 				classie.remove( modal, 'md-show' );
-
 				if( hasPerspective ) {
 					classie.remove( document.documentElement, 'md-perspective' );
 				}
@@ -30,10 +30,12 @@ var ModalEffects = (function() {
 
 			function removeModalHandler() {
 				removeModal( classie.has( el, 'md-setperspective' ) ); 
+                 $("#mainContent").removeClass("blur");
 			}
 
 			el.addEventListener( 'click', function( ev ) {
 				classie.add( modal, 'md-show' );
+                  $("#mainContent").addClass("blur");
 				overlay.removeEventListener( 'click', removeModalHandler );
 				overlay.addEventListener( 'click', removeModalHandler );
 

@@ -12,9 +12,8 @@
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
     <script src="/js/jquery.mousewheel.min.js" type="text/javascript "></script>
-    <!-- Modal Windows -->
-    <link rel="stylesheet" type="text/css" href="/css/component.css" />
-    <!--Webfonts-->
+    <!--Webfonts Roboto-->
+<!--    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,500italic,700,700italic,300,300italic,400italic,900,900italic' rel='stylesheet' type='text/css'>-->
     <!-- Stylesheets-->
     <link href="/css/normalize.css" rel="stylesheet" />
     <link href="/css/grid.css" rel="stylesheet" />
@@ -22,46 +21,253 @@
 </head>
 
 <body>
-    <!-- Site -->
-
-
+  
     <nav id="sticky-Nav" class="no-mobile">
         <img src="/images/bird-Placeholder.png">
         <ul>
+            <li><a href="#">Work</a>
+            </li>
             <li><a href="#">Leadership</a>
             </li>
             <li><a href="#">People</a>
-            </li>
-            <li><a href="#">Work</a>
             </li>
             <li><a href="#">Join Us</a>
             </li>
         </ul>
     </nav>
+  <!-- Site -->
+    
+    <div id="mainContent">
+        <section id="Story" >
+           <div class="video"> 
+            <iframe src="//player.vimeo.com/video/114893528?autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+       </div><div class="overlay"></div>
+        </section>
+<!--        <div style="clear:both"></div>-->
+        <div id="divide-One"></div>
 
-    <section id="Story">
-        <!-- Navigation -->
-    </section>
-    <div id="divide-One"></div>
 
 
+        <!-- Case Studies -->
+        <section id="Work">
+            <div class="column six Case-One">
+                <img src="images/Case_1.jpg">
+                <div class="our-story">
+                    <h1>Less sell<br/> more soul</h1>
+                    <p>Marketing can do more than show and tell. Marketing can give something meaningful to an audience...</p>
+                    <button class="md-trigger" data-modal="modal-1">Read More</button>
+                </div>
+            </div>
+            <div class="column six Case-Two">
+                <img src="images/Case_2.jpg">
+                <div class="overlayEffect Case-Two-BK">
+                    <div class="details">
+                        <h2>Microsoft</h2>
+                        <p><i>To provide every student with access to music education.</i>
+                        </p>
+                        <button class="md-trigger" data-modal="modal-2">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="column six Case-Three">
+                <img src="images/Case_3.jpg">
+                <div class="overlayEffect Case-Three-BK">
+                    <div class="details">
+                        <h2>Dreyer's</h2>
+                        <p><i>To help moms find the wonder in between the big moments.</i>
+                        </p>
+                        <button class="md-trigger" data-modal="modal-3">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="column six Case-Four">
+                <img src="images/Case_4.jpg">
+                <div class="overlayEffect Case-Four-BK">
+                    <div class="details">
+                        <h2>Carvers </h2>
+                        <p><i>Carvers (Original Special)
+                        <br/>New Honor Society Member Scott Jenkins, Producer</i>
+                        </p>
+                        <button class="md-trigger" data-modal="modal-4">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="column six Case-Five">
+                <img src="images/Case_5.jpg">
+                <div class="overlayEffect Case-Five-BK">
+                    <div class="details">
+                        <h2>GENERAL</h2>
+                        <p><i>To give people the freedom to elevate every experience.</i>
+                        </p>
+                        <button class="md-trigger" data-modal="modal-5">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="column six Case-Six">
+                <img src="images/Case_6.jpg">
+                <div class="overlayEffect Case-Six-BK">
+                    <div class="details">
+                        <h2>Devine Color </h2>
+                        <p><i>To free color from the limits of paint.</i>
+                        </p>
+                        <button class="md-trigger" data-modal="modal-6">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div style="clear:both"></div>
+        <section id="Leadership">
+            <img src="images/Leadership.jpg">
+            <div class="v-align">
+                <h2 class="md-trigger" data-modal="modal-7">Agency Partners</h2>
+            </div>
+        </section>
+
+        <div id="divide-Two"></div>
+        <!-- People  -->
+        <section id="People">
+        </section>
+
+        <div id="divide-Three"></div>
+        <section id="Join-Us">
+            <div class="Join-Us-Case">
+                <!-- Relative to Join Us-->
+                <div class="v-align">
+                    <h2>Join Us</h2>
+                </div>
+                <img src="/images/JoinUs.jpg">
+                <div class="overlayEffect Join-Us-Bk">                   
+<!--
+                        <a href="" class="new-business">New Business</a>
+                        <a href="" class="job-opportunities">Job Opportunities</a>
+-->   
+                </div>
+            </div>
+        </section>
+        <!-- Foooter  Bing Maps-->
+        <footer id="Footer">
+            <div class="left-foot">
+                <img src="/images/Sword_and_Map.png" class="footer-img">
+                <ul>
+                    <li><a href="http://www.bing.com/maps/#Y3A9MzguNjMwOTA1fi05MC4xOTAwMTgmbHZsPTQmc3R5PXImd2hlcmUxPXN0LiUyMGxvdWlzJnNzPXlwLm5ldyUyMGhvbm9yJTIwc29jaWV0eX5wZy4xfnJhZC44MA">St. Louis</a>
+                    </li>
+                    <li><a href="http://www.bing.com/maps/#Y3A9NDEuODk5OTM5fi04Ny42MjU5MzEmbHZsPTE3JnN0eT1yJnNzPXlwLm5ldyUyMGhvbm9yJTIwc29jaWV0eX5wZy4xfnJhZC44MA==">Chicago</a>
+                    </li>
+                    <li><a href="http://www.bing.com/maps/default.aspx?q=1160+battery+street+suite+250&mkt=en&FORM=HDRSC4#Y3A9MzcuODAxODUzfi0xMjIuNDAxMzk4Jmx2bD0xNiZzdHk9ciZxPTExNjAlMjBiYXR0ZXJ5JTIwc3RyZWV0JTIwc3VpdGUlMjAyNTAlMkMlMjBzYW4lMjBmcmFuc2lzY28lMkMlMjBjYSUyMDk0MTEx">San Fransisco</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-foot">
+                <ul>
+                    <li><a href="https://twitter.com/hashtag/newhonorsociety">Instagram</a>
+                    </li>
+                    <li><a href="https://twitter.com/newhonorsociety">Twitter</a>
+                    </li>
+                </ul>
+                <img src="/images/back_to_top.png" height="50px" class="backToTop">
+            </div>
+        </footer>
+    </div>
     <!-- Modal Windows -->
-    <div class="md-modal md-effect-16" id="modal-16">
+    <!-- Case 1-->
+    <div class="md-modal md-effect-16" id="modal-1">
         <div class="md-content">
             <div>
-                <h3>Devine Color </h3>
-                <p><strong>Brand Calling</strong>
-                </p>
-                <p>To free color from the limits of paint.</p>
-                <p><strong>The Story</strong>
-                </p>
-                <p>Until now, the boundaries of paint have kept true color from shining through. Devine Color, a boutique paint brand for those who see color as more than a number on a swatch, aimed to change that by developing a formula that allows the color you imagine to show up on your walls in its purest form. New Honor Society developed the brand positioning, style guide and marketing plan for the launch.</p>
-
-                <a href="#" class="md-close button"><img src="/images/close.png"></a>
+                <h3>New Honor Society </h3>
+                <p><strong>Brand Calling</strong><br/>
+                To free color from the limits of paint.</p>
+                <p><strong>The Story</strong><br/>Lower ipsum it's all greek to me.</p>
+                <a href="#" class="md-close button">
+                    <img src="/images/close.png">
+                </a>
             </div>
         </div>
     </div>
 
+<<<<<<< HEAD
+    <!-- Case 2-->
+    <div class="md-modal md-effect-16" id="modal-2">
+        <div class="md-content">
+            <div>
+                <h3>Microsoft</h3>
+                 <p><strong>Brand Calling</strong><br/>
+                To free color from the limits of paint.</p>
+                <p><strong>The Story</strong><br/>Lower ipsum it's all greek to me.</p>
+                <a href="#" class="md-close button">
+                    <img src="/images/close.png">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Case 3-->
+    <div class="md-modal md-effect-16" id="modal-3">
+        <div class="md-content">
+            <div>
+                <h3>Dreyer's </h3>
+                <p><strong>Brand Calling</strong><br/>To free color from the limits of paint.</p>
+                <p><strong>The Story</strong><br/>Lower ipsum it's all greek to me.</p>
+                <a href="#" class="md-close button">
+                    <img src="/images/close.png">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Case 4-->
+    <div class="md-modal md-effect-16" id="modal-4">
+        <div class="md-content">
+            <div>
+                <h3>Carvers</h3>
+                <p><strong>Brand Calling</strong><br/>
+                To free color from the limits of paint.</p>
+                <p><strong>The Story</strong><br/>Lower ipsum it's all greek to me.</p>
+                <a href="#" class="md-close button">
+                    <img src="/images/close.png">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Case 5-->
+    <div class="md-modal md-effect-16" id="modal-5">
+        <div class="md-content">
+            <div>
+                <h3>General </h3>
+                <p><strong>Brand Calling</strong><br/>
+                To free color from the limits of paint.</p>
+                <p><strong>The Story</strong><br/>Lower ipsum it's all greek to me.</p>
+                <a href="#" class="md-close button">
+                    <img src="/images/close.png">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Case 5-->
+    <div class="md-modal md-effect-16" id="modal-5">
+        <div class="md-content">
+            <div>
+                <h3>Devine Color </h3>
+                <p><strong>Brand Calling</strong><br/>
+                To free color from the limits of paint.</p>
+                <p><strong>The Story</strong><br/>
+                Lower ipsum it's all greek to me.</p>
+                <a href="#" class="md-close button">
+                    <img src="/images/close.png">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Case 6-->
+    <div class="md-modal md-effect-16" id="modal-6">
+        <div class="md-content">
+            <div>
+                <h3>Devine Color</h3>
+                <p><strong>Brand Calling</strong><br/>
+                To free color from the limits of paint.</p>
+                <p><strong>The Story</strong><br/>
+                Until now, the boundaries of paint have kept true color from shining through. Devine Color, a boutique paint brand for those who see color as more than a number on a swatch, aimed to change that by developing a formula that allows the color you imagine to show up on your walls in its purest form. New Honor Society developed the brand positioning, style guide and marketing plan for the launch.</p>
+                <a href="#" class="md-close button">
+                    <img src="/images/close.png">
+                </a>
+=======
     <!-- Case Studies -->
     <section id="Work">
         <div class="column six Case-One">
@@ -118,42 +324,47 @@
                     <p>To free color from the limites of paint.</p>
                     <button>Read More</button>
                 </div>
+>>>>>>> parent of ec78dcd... Updates
             </div>
         </div>
-    </section>
-    <div style="clear:both"></div>
-    <section id="Leadership"></section>
+    </div>
+    <!-- Heide & Holly -->
+    <div class="md-modal md-effect-16" id="modal-7">
+        <div id="leadership-content" class="md-content">
+            <div class="header">
+                <h3>Heidi & Holly</h3>
+            </div>
+            <div style="clear:both"></div>
+            <p class="column six">Heidi Singleton and Holly Aguirre (aka “HiHo”) have partnered for over 15 years, forming an uncommonly collaborative approach to creative and account service relationships, agency life and client work. As Co-Managing Directors, Holly brings strong business acumen, strategic thinking and client focused leadership while Heidi is the creative visionary, ensuring that the work and agency culture lives into the mantra of Less Sell, More Soul.</p>
+            <p class="column six">The foundation for their success is the shared view that great brands aren’t just good for business, they are good for the world and the people they serve. And to help fulfill on that vision, creatives are encouraged to explore multiple outlets for innovative thinking, accountexecs are cultivators of both creative work and client partnerships, and everyone is collectively working toward more meaningful marketing for every brand.</p>
+            <div style="clear:both"></div>
+            <a href="#" class="md-close button">
+                <img src="/images/close.png">
+            </a>
 
-    <div id="divide-Two"></div>
-    <!-- People  -->
-    <section id="People"></section>
-
-    <div id="divide-Three"></div>
-    <section id="Join-Us"></section>
-    <!-- Foooter -->
-    <footer id="Footer">
-        <div class="left-foot">
-            <img src="/images/Sword_and_Map.png" class="footer-img">
-            <ul>
-                <li><a href="#">St. Louis</a>
-                </li>
-                <li><a href="#">Chicago</a>
-                </li>
-                <li><a href="#">San Fransisco</a>
-                </li>
-            </ul>
         </div>
-        <div class="right-foot">
-            <ul>
-                <li><a href="#">Instagram</a>
-                </li>
-                <li><a href="#">Twitter</a>
-                </li>
-            </ul>
-            <img src="/images/back_to_top.png" height="50px" class="backToTop">
-        </div>
-    </footer>
+    </div>
+<!-- Bing Map St. Louis -->
+    
+        <div class="md-modal md-effect-16" id="modal-8">
+        <div class="md-content">
+            <div class="header">
+                <h3>New Honor St. Louis</h3>
+            </div>
+           <div class="bing-map">
+        <iframe width="400" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+        src="http://www.bing.com/maps/#Y3A9MzguNjMwOTA1fi05MC4xOTAwMTgmbHZsPTQmc3R5PXImd2hlcmUxPXN0LiUyMGxvdWlzJnNzPXlwLm5ldyUyMGhvbm9yJTIwc29jaWV0eX5wZy4xfnJhZC44MA"/></iframe>
+            </div>
+            <div style="clear:both"></div>
+            <a href="#" class="md-close button">
+                <img src="/images/close.png">
+            </a>
 
+        </div>
+    </div>
+    
+    
+    
     <div class="md-overlay"></div>
     <script src="/js/app.js" type="text/javascript "></script>
     <script src="/js/classie.js"></script>
